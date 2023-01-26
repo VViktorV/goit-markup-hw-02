@@ -1,0 +1,224 @@
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --hero-text-color: #FFFFFF;
+    --footer-text-color: #E7E9FC;
+    --active-text-color: #4D5AE5;
+    --fon-section-color: #2E2F42;
+    --white-fon-color: #FFFFFF;
+    --team-fon-color: #F4F4FD;
+    --accent-color: #4D5AE5;
+}
+
+
+body {
+    background-color: #E5E5E5;
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+.list {
+    list-style: none;
+}
+
+/*---------------------Cap---------------------*/
+.cap {
+    background-color: var(--white-fon-color);
+}
+
+/*--------Logo company-------*/
+.cap-logo {
+    color: var(--active-text-color);
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-decoration: none;
+}
+
+a span {
+    color: var(--title-text-color);
+}
+
+/*--------Site nav--------*/
+.site-nav .link {
+    color: var(--title-text-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--active-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/*--------Contacts--------*/
+.auth-contacts .link {
+    color: #434455;
+    text-decoration: none;
+}
+
+.auth-contacts .link:hover,
+.auth-contacts .link:focus {
+    color: var(--active-text-color);
+}
+
+/*---------------------Main index.html---------------------*/
+
+
+/*--------Hiro--------*/
+
+.hero {
+    background-color: var(--fon-section-color);
+}
+
+.hero-title {
+    color: var(--hero-text-color);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+
+.hero-aktive-button {
+    background-color: var(--active-text-color);
+    color: var(--hero-text-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/*--------Company slogans--------*/
+.slogans-title {
+    color: var(--title-text-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
+
+.slogans-list .title {
+    color: var(--title-text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+/*--------Activiti--------*/
+.activiti-title {
+    color: var(--title-text-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
+
+.activiti-list
+/*--------Team--------*/
+
+.team {
+    background-color: var(--team-fon-color);
+}
+
+.team-title {
+    color: var(--title-text-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
+
+.team-list .title {
+    color: var(--title-text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+/* ------------------------Portfolio.html------------------------ */
+
+/* --Menu filter-- */
+
+.menu-filter {}
+
+.menu-list {}
+
+.filter-button {
+    background-color: var(--team-fon-color);
+    color: var(--accent-color);
+
+}
+
+/* --Menu-- */
+
+.services-menu {}
+
+.list {}
+
+.menu-title {}
+
+.title {}
+
+/*---------------------Footer---------------------*/
+
+.basement {
+    background-color: var(--fon-section-color);
+}
+
+.basement-logo {
+    font-family: Raleway;
+    color: var(--active-text-color);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.span-logo {
+    color: var(--team-fon-color);
+}
+
+.basement-text {
+    color: var(--footer-text-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* основний колір текста #434455; */
+/* вторинний колір тексту #2E2F42; */
+/* колір тексту section Hero #FFFFFF; */
+/* колір тексту Footer #E7E9FC;  */
+/* колір лого #4D5AE5; #F4F4FD; */
+/* акцент #4D5AE5; */
+/* колір фона Cap #FFFFFF; ; */
+/* колір фона section Hero & Footer #2E2F42; */
+/* колір фона section Comp/slogans & Activiti #E5E5E5; */
+/* колір фона section Team #F4F4FD; */
