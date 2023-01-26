@@ -8,13 +8,14 @@
     --white-fon-color: #FFFFFF;
     --team-fon-color: #F4F4FD;
     --accent-color: #4D5AE5;
+    --fon-white--: #E5E5E5;
 }
 
 
 body {
+    font-family: Roboto, sans-serif;
     background-color: #E5E5E5;
     color: var(--primary-text-color);
-    font-family: Roboto, sans-serif;
     letter-spacing: 0.02em;
     font-size: 16px;
     line-height: 1.5;
@@ -63,7 +64,7 @@ a span {
 
 /*--------Contacts--------*/
 .auth-contacts .link {
-    color: #434455;
+    color: var(--primary-text-color);
     text-decoration: none;
 }
 
@@ -90,14 +91,19 @@ a span {
 }
 
 .hero-aktive-button {
+    font-family: inherit;
     background-color: var(--active-text-color);
     color: var(--hero-text-color);
     font-weight: 600;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     cursor: pointer;
+}
+
+.hero-aktive-button :hover,
+.hero-aktive-button :focus {
+    background-color: var(--accent-color);
 }
 
 
@@ -159,20 +165,46 @@ a span {
 .menu-list {}
 
 .filter-button {
+    font-family: inherit;
     background-color: var(--team-fon-color);
     color: var(--accent-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
 
 }
 
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--white-fon-color);
+    background-color: var(--accent-color);
+
+}
+
+
 /* --Menu-- */
 
-.services-menu {}
+.menu-services {}
 
-.list {}
+.menu-list {}
 
 .menu-title {}
 
-.title {}
+.title {
+    color: var(--title-text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+a.text {
+    text-decoration: none;
+    color: currentColor
+}
 
 /*---------------------Footer---------------------*/
 
@@ -220,5 +252,5 @@ a span {
 /* акцент #4D5AE5; */
 /* колір фона Cap #FFFFFF; ; */
 /* колір фона section Hero & Footer #2E2F42; */
-/* колір фона section Comp/slogans & Activiti #E5E5E5; */
+/* колір фона white #E5E5E5; */
 /* колір фона section Team #F4F4FD; */
