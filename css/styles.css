@@ -9,19 +9,31 @@
     --team-fon-color: #F4F4FD;
     --accent-color: #4D5AE5;
     --fon-white--: #E5E5E5;
+    --active-accent-color: #404BBF;
 }
 
 
 body {
     font-family: Roboto, sans-serif;
-    background-color: #E5E5E5;
+    background-color: #FFFFFF;
     color: var(--primary-text-color);
     letter-spacing: 0.02em;
     font-size: 16px;
-    line-height: 1.5;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .list {
     list-style: none;
@@ -35,10 +47,11 @@ body {
 /*--------Logo company-------*/
 .cap-logo {
     color: var(--active-text-color);
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: 0.03em;
     text-decoration: none;
 }
 
@@ -49,7 +62,10 @@ a span {
 /*--------Site nav--------*/
 .site-nav .link {
     color: var(--title-text-color);
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     text-decoration: none;
 }
 
@@ -63,8 +79,13 @@ a span {
 }
 
 /*--------Contacts--------*/
+.contacts {
+    font-style: normal;
+}
+
 .auth-contacts .link {
     color: var(--primary-text-color);
+    line-height: 1.5;
     text-decoration: none;
 }
 
@@ -84,83 +105,74 @@ a span {
 
 .hero-title {
     color: var(--hero-text-color);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    letter-spacing: 0.02;
     text-align: center;
 }
 
 .hero-aktive-button {
     font-family: inherit;
-    background-color: var(--active-text-color);
+    background-color: var(--accent-color);
     color: var(--hero-text-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.04em;
     cursor: pointer;
 }
 
-.hero-aktive-button :hover,
-.hero-aktive-button :focus {
-    background-color: var(--accent-color);
+.hero-aktive-button:hover,
+.hero-aktive-button:focus {
+    background-color: var(--active-accent-color);
 }
 
 
 /*--------Company slogans--------*/
-.slogans-title {
-    color: var(--title-text-color);
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-}
-
-.slogans-list .title {
-    color: var(--title-text-color);
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-}
-
-
 /*--------Activiti--------*/
-.activiti-title {
-    color: var(--title-text-color);
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-}
-
-.activiti-list
 /*--------Team--------*/
-
 .team {
     background-color: var(--team-fon-color);
 }
 
+.activiti-title,
 .team-title {
     color: var(--title-text-color);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    letter-spacing: 0.02em;
     text-align: center;
 }
 
+
+.slogans-list .title,
 .team-list .title {
     color: var(--title-text-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
+
+.text {
+    line-height: 1.5;
+}
+
+
+
+
+
+
 
 
 /* ------------------------Portfolio.html------------------------ */
 
 /* --Menu filter-- */
 
-.menu-filter {}
+.menu-filter-services {}
 
 .menu-list {}
 
@@ -168,12 +180,12 @@ a span {
     font-family: inherit;
     background-color: var(--team-fon-color);
     color: var(--accent-color);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     cursor: pointer;
+
 
 }
 
@@ -187,7 +199,7 @@ a span {
 
 /* --Menu-- */
 
-.menu-services {}
+
 
 .menu-list {}
 
@@ -195,7 +207,7 @@ a span {
 
 .title {
     color: var(--title-text-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -228,6 +240,7 @@ a.text {
 
 .basement-text {
     color: var(--footer-text-color);
+    line-height: 1.5;
 }
 
 
